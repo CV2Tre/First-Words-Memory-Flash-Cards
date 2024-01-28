@@ -8,19 +8,22 @@
     <title>First Words Memory Flash Cards</title>
 </head>
 <body>
-    <h1>First Words Flash Cards</h1>
-
-    <div> 
-        <img id="image">
-    </div>
     
-    <div>
-        <h3 id="imageName"></h3>
+    <div class="card"> 
+        <div class="card__flip">
+            <div class="card__face card__face--front">
+                <img id="image" src="assets/cake.webp" alt="" class="cakepic" />
+            </div>
+            <div class="card__face card__face--back">
+                <h2 id="card_back">Birthday Cake</h2>
+            </div>
+        </div>
     </div>
 
     <div class="button">
-        <button>See Image</button>
-        <button>Next Card</button>
+        <button class="previous">◀︎</button>
+        <button id="word" class="word">Image Word</button>
+        <button class="next">►</button>
     </div>
 
     <script defer src="script.js"></script>
