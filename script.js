@@ -49,6 +49,8 @@ nextButton.addEventListener('click', function() {
     card_face.src = randomKeyValue.value;
     document.getElementById('word').innerText = randomKeyValue.key;
     document.getElementById('card_back').innerText = randomKeyValue.key;
+    let word = document.getElementById('word').innerText;
+    speak("this is a picture of a " +word);
 })
 
 previousButton.addEventListener('click', function() {
@@ -56,5 +58,18 @@ previousButton.addEventListener('click', function() {
     card_face.src = randomKeyValue.value;
     document.getElementById('word').innerText = randomKeyValue.key;
     document.getElementById('card_back').innerText = randomKeyValue.key;
+    let word = document.getElementById('word').innerText;
+    speak("this is a picture of a " +word);
 })
 
+function speak(word) {
+    // Replace with the text you want to be spoken
+    const text = word; 
+    const voices = speechSynthesis.getVoices();
+
+// Select a random voice
+
+const randomVoice = voices[Math.floor(Math.random() * voices.length)];
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
