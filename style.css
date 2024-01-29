@@ -15,15 +15,27 @@ h1 {
     text-align: center;
     margin-top: 50px;
     color: aqua;
-    /* animation: color-change 30s infinite; */
 }
 
-@keyframes color-change {
-    0% { color: darkblue; }
-    25% { color: yellow; }
-    50% { color: turquoise; }
-    75% { color: hotpink;}
-    100% { color: aqua;}
+@keyframes changeBoxShadow {
+    0% {
+        box-shadow: 0 0 10px 0 darkblue; /* Set the box shadow color at the start of the animation */
+    }
+    20% {
+        box-shadow: 0 0 10px 0 rgba(0, 255, 0, 0.5); /* Set the box shadow color at 20% of the animation */
+    }
+    40% {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.5); /* Set the box shadow color at 40% of the animation */
+    }
+    60% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 0, 0.5); /* Set the box shadow color at 60% of the animation */
+    }
+    80% {
+        box-shadow: 0 0 10px 0 hotpink; /* Set the box shadow color at 80% of the animation */
+    }
+    100% {
+        box-shadow: 0 0 10px 0 aqua; /* Set the box shadow color at the end of the animation */
+    }
 }
 
 body {
@@ -61,6 +73,7 @@ body {
     overflow: hidden;
     border-radius: 18px;
     box-shadow: 0px 4px 19px 4px var(--primary);
+    animation: changeBoxShadow 25s infinite;
 }
 
 .cakepic {
