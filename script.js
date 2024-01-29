@@ -16,12 +16,16 @@ const imageMap= {
     sun:"assets/sun.jpg",
     tree:"assets/tree.jpg"
 }
+
 //Function to get a random key and its value from an object
 function getRandomKeyValue(obj) {
+
   // Get all keys of the object
   const keys = Object.keys(obj);
+
   // Select a random key
   const randomKey = keys[Math.floor(Math.random() * keys.length)];
+
   // Return the random key and its corresponding value
   return { key: randomKey, value: obj[randomKey] };
 }
