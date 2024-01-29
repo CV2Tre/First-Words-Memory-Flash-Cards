@@ -68,7 +68,6 @@ function speak(word) {
     const voices = speechSynthesis.getVoices();
 
 // Select a random voice
-
 const randomVoice = voices[Math.floor(Math.random() * voices.length)];
     const utterance = new SpeechSynthesisUtterance(text);
     speechSynthesis.speak(utterance);
