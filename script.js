@@ -22,7 +22,7 @@ function getRandomKeyValue(obj) {
 
   // Get all keys of the object
   const keys = Object.keys(obj);
-
+ 
   // Select a random key
   const randomKey = keys[Math.floor(Math.random() * keys.length)];
 

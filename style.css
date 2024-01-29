@@ -10,6 +10,22 @@ margin: 0;
 padding: 0;
 }
 
+h1 {
+    font-family: 'Single Day', cursive;
+    text-align: center;
+    margin-top: 50px;
+    color: aqua;
+    /* animation: color-change 30s infinite; */
+}
+
+@keyframes color-change {
+    0% { color: darkblue; }
+    25% { color: yellow; }
+    50% { color: turquoise; }
+    75% { color: hotpink;}
+    100% { color: aqua;}
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
@@ -17,7 +33,7 @@ body {
 }
 
 .card {
-    margin: 100px auto 0;
+    margin: 35px auto 0;
     width: 400px;
     height: 600px;
     perspective: 1000px;
@@ -48,10 +64,9 @@ body {
 }
 
 .cakepic {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    align-content: center;
+    display: block;
+    text-align: center;
+    margin: auto;
     width: 310px;
     height: 450px;
     border-radius: 1000%;
@@ -78,7 +93,7 @@ body {
 
 .button {
     text-align: center;
-    margin-top: 75px;
+    margin-top: 35px;
 }
 
 button {
