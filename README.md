@@ -9,10 +9,14 @@ Objectives:
 * reinforce common word recognition to form a foundation of reading readiness
 * help develop memorization tactics to support success across subjects
 
+* KEYS at the bottom of flash card are:
+    * ◀︎  to move the flash card to the left
+    * ► to move the flash card to the right
+    *  middle button speaks to flash card image and flips from image to name 
 
 FLASH CARD DESCRIPTION OF HOW IT WILL BE DESIGNED:
 
-Cake - Image
+Cake - Image 
 
 Back side of the falsh card is the word 
     
