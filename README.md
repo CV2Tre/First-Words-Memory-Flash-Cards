@@ -38,3 +38,8 @@ Back side of the falsh card is the word
 
 ![image](https://github.com/CV2Tre/First-Words-Memory-Flash-Cards/assets/156357217/2deabfe7-881c-41b5-8b60-488aba52e74b)
 
+
+sources: YouTube
+https://www.youtube.com/watch?v=urf3kHQX7aI;
+https://youtube.com/watch?v=QGVXmoZWZuw
+
